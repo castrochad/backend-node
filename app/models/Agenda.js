@@ -1,4 +1,4 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes } = require('sequelize')
 const { sequelize } = require('../core/sequelize');
 
 const Agenda = sequelize.define('Agenda', {
@@ -7,43 +7,41 @@ const Agenda = sequelize.define('Agenda', {
     allowNull: false,
   },
   celular: {
-    type: DataTypes.NUMBER(100),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   email: {
-    type: DataTypes.STRING(100),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   rua: {
-    type: DataTypes.STRING(100),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   numero: {
-    type: DataTypes.NUMBER(20),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   bairro: {
-    type: DataTypes.STRING(100),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   cidade: {
-    type: DataTypes.STRING(100),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   estado: {
-    type: DataTypes.STRING(50),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   cep: {
-    type: DataTypes.STRING(20),
-    allowNull: false
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   complemento: {
-    type: DataTypes.STRING(100),
-  },
-  done: {
-    type: DataTypes.BOOLEAN,
-  },
-});
+    type: DataTypes.STRING,
+    allowNull: false,
+  }
+})
 
-module.exports = Agenda;
+module.exports = Agenda
